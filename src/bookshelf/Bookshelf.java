@@ -1,0 +1,23 @@
+package bookshelf;
+
+public class Bookshelf extends Shelf implements Queue{
+
+	@Override
+	public void enQueue(String title) {
+		shelf.add(title);
+		
+	}
+
+	@Override
+	public String deQueue() {
+		// TODO Auto-generated method stub
+		return shelf.remove(0);
+	}
+
+	@Override
+	public int getsize() {
+		// TODO Auto-generated method stub
+		return getCount();
+	}
+	
+}
